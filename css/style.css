@@ -16,9 +16,9 @@
   --line:        rgba(54, 43, 32, 0.12);
   --white:       #FFFDF9;
 
-  /* type */
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Inter", -apple-system, "Segoe UI", sans-serif;
+  /* type — Georgian glyphs fall through to the Noto families */
+  --font-display: "Fraunces", "Noto Serif Georgian", Georgia, serif;
+  --font-body: "Inter", "Noto Sans Georgian", -apple-system, "Segoe UI", sans-serif;
 
   /* rhythm */
   --space-section: clamp(4.5rem, 10vw, 8.5rem);
@@ -153,7 +153,46 @@ h2 em {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
   padding-block: 1rem;
+}
+
+.header-side {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* language switch */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.lang-sep { opacity: 0.4; }
+
+.lang-btn {
+  padding: 0.35rem 0.15rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  opacity: 0.55;
+  border-bottom: 1px solid transparent;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.lang-btn:hover { opacity: 0.85; }
+
+.lang-btn.is-active {
+  opacity: 1;
+  border-bottom-color: currentColor;
+  cursor: default;
 }
 
 .brand { display: flex; flex-direction: column; line-height: 1.15; }
@@ -230,7 +269,7 @@ h2 em {
 .nav-toggle[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
 @media (min-width: 800px) {
-  .site-nav { display: flex; }
+  .site-nav { display: flex; margin-left: auto; }
   .nav-toggle { display: none; }
 }
 
@@ -368,6 +407,45 @@ h2 em {
 
 /* ---------- flavours ---------- */
 
+/* keep the browser from re-anchoring scroll when the grid reflows */
+.flavors { overflow-anchor: none; }
+
+.flavor-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.filter-btn {
+  padding: 0.55rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 0.35s var(--ease-out), color 0.35s var(--ease-out),
+              border-color 0.35s var(--ease-out), transform 0.35s var(--ease-out);
+}
+
+.filter-btn:hover {
+  color: var(--espresso);
+  border-color: var(--caramel);
+  transform: translateY(-1px);
+}
+
+.filter-btn.is-active {
+  background: var(--caramel);
+  border-color: var(--caramel);
+  color: var(--white);
+  cursor: default;
+  transform: none;
+}
+
 .flavor-grid {
   list-style: none;
   display: grid;
@@ -383,12 +461,27 @@ h2 em {
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: transform 0.5s var(--ease-out), box-shadow 0.5s var(--ease-out);
+  transition: transform 0.5s var(--ease-out), box-shadow 0.5s var(--ease-out),
+              opacity 0.35s var(--ease-out);
 }
 
 .flavor-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-soft);
+}
+
+.flavor-card[hidden] { display: none; }
+
+/* filter transitions: fade out, then FLIP-glide + fade in */
+.flavor-card.is-exiting {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+.flavor-card.is-entering {
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  transition: none;
 }
 
 .flavor-media {
@@ -552,7 +645,7 @@ h2 em {
   font-weight: 600;
 }
 
-.review-card figcaption span {
+.review-card figcaption .loc {
   display: block;
   font-weight: 400;
   color: var(--muted);
@@ -705,6 +798,26 @@ h2 em {
 
 .footer-bottom p { margin: 0; }
 .footer-bottom a:hover { color: var(--cream); }
+
+/* ---------- language switch fade ---------- */
+
+body {
+  transition: opacity 0.2s ease;
+}
+
+body.lang-fading { opacity: 0; }
+
+/* Georgian script: soften the wide Latin tracking, skip faux capitals */
+html[lang="ka"] .kicker,
+html[lang="ka"] .flavor-tag,
+html[lang="ka"] .brand-sub,
+html[lang="ka"] .site-footer h4,
+html[lang="ka"] .story-stats dd {
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+
+html[lang="ka"] .hero h1 { letter-spacing: 0; }
 
 /* ---------- reveal animations ---------- */
 
