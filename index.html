@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luca Polare — Artisan Gelateria · Tbilisi, since 2008</title>
+  <meta name="description" content="Artisan gelato made daily from fresh milk, real fruit and time-honoured Italian recipes. Over 60 flavours in rotation across our cafés in Tbilisi and Batumi.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/img/hero-gelato.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍦</text></svg>">
+</head>
+<body>
+
+  <!-- ======================= Header ======================= -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Luca Polare — home">
+        <span class="brand-name">Luca&nbsp;Polare</span>
+        <span class="brand-sub">Gelateria · est. 2008</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#flavors">Flavours</a>
+        <a href="#story">Our Story</a>
+        <a href="#reviews">Word of Mouth</a>
+        <a href="#visit" class="nav-cta">Visit a Café</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================= Hero ======================= -->
+    <section class="hero">
+      <div class="hero-media" data-parallax="0.25">
+        <img src="assets/img/hero-gelato.jpg" alt="Hand-filled gelato cones with berries and edible flowers on craft paper" width="1900" height="1267" fetchpriority="high">
+      </div>
+      <div class="hero-veil" aria-hidden="true"></div>
+
+      <div class="hero-content container">
+        <p class="kicker reveal">Artisan gelateria — Tbilisi · Batumi</p>
+        <h1 class="reveal d-1">Gelato made<br>the slow way.</h1>
+        <p class="hero-lede reveal d-2">Fresh milk every morning, fruit in season, and recipes we brought home from Italy in 2008. Churned in small batches, served the same day.</p>
+        <div class="hero-actions reveal d-3">
+          <a class="btn btn-solid" href="#flavors">Explore the flavours</a>
+          <a class="btn btn-ghost" href="#visit">Find a café</a>
+        </div>
+      </div>
+
+      <a class="hero-scroll" href="#ethos" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16m0 0l-6-6m6 6l6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ======================= Ethos strip ======================= -->
+    <section class="ethos" id="ethos" aria-label="What we stand for">
+      <div class="container ethos-grid">
+        <div class="ethos-item reveal">
+          <svg class="ethos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 21c4.5-3.5 7.5-7 7.5-11A7.5 7.5 0 0 0 12 2.5 7.5 7.5 0 0 0 4.5 10c0 4 3 7.5 7.5 11Z"/><path d="M12 2.5V21"/></svg>
+          <h3>Fresh milk, daily</h3>
+          <p>Delivered each morning from farms outside the city. Never powdered, never reconstituted.</p>
+        </div>
+        <div class="ethos-item reveal d-1">
+          <svg class="ethos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 20c0-7 5-13 14-16-1 9-6 14-14 16Z"/><path d="M4 20C7 14 11 10 16 7"/></svg>
+          <h3>Real ingredients</h3>
+          <p>Season-ripe fruit, roasted nuts, true vanilla and cocoa. Nothing artificial — it simply isn't needed.</p>
+        </div>
+        <div class="ethos-item reveal d-2">
+          <svg class="ethos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 3h8l-1.2 9H9.2L8 3Z"/><path d="M12 12v6"/><path d="M9 21h6"/></svg>
+          <h3>Italian craft</h3>
+          <p>Recipes learned in Italian workshops, kept alive here — batch by batch, since 2008.</p>
+        </div>
+        <div class="ethos-item reveal d-3">
+          <svg class="ethos-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <h3>Churned today</h3>
+          <p>Small batches made through the day, so what lands in your cone was frozen hours ago — not weeks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Flavours ======================= -->
+    <section class="flavors section" id="flavors">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">The counter</p>
+          <h2>Six that never leave.<br><em>Sixty that come and go.</em></h2>
+          <p class="section-lede">Our case holds up to sixty flavours through the year, following what the orchards and markets bring. These are the signatures our regulars won't let us retire.</p>
+        </header>
+
+        <ul class="flavor-grid">
+          <li class="flavor-card reveal">
+            <figure class="flavor-media">
+              <img src="assets/img/flavor-vanilla.jpg" alt="Vanilla cream in a ceramic cup with dark chocolate drizzle" width="900" height="1080" loading="lazy">
+              <figcaption class="flavor-tag">The classic</figcaption>
+            </figure>
+            <div class="flavor-body">
+              <h3>Bourbon Vanilla</h3>
+              <p>Whole vanilla pods steeped overnight in fresh milk — quiet, round, and anything but plain.</p>
+            </div>
+          </li>
+
+          <li class="flavor-card reveal d-1">
+            <figure class="flavor-media">
+              <img src="assets/img/flavor-chocolate.jpg" alt="Dark chocolate gelato cones beside roasted coffee beans" width="900" height="1080" loading="lazy">
+              <figcaption class="flavor-tag">Signature</figcaption>
+            </figure>
+            <div class="flavor-body">
+              <h3>Chocolate Fondente</h3>
+              <p>Deep single-origin cocoa churned slow for a dense, almost sorbet-dark finish.</p>
+            </div>
+          </li>
+
+          <li class="flavor-card reveal d-2">
+            <figure class="flavor-media">
+              <img src="assets/img/flavor-cherry.jpg" alt="Amarena cherry and cream gelato bars with fresh cherries" width="900" height="1080" loading="lazy">
+              <figcaption class="flavor-tag">Signature</figcaption>
+            </figure>
+            <div class="flavor-body">
+              <h3>Amarena Cherry</h3>
+              <p>Sour Amarena cherries folded through sweet cream — the recipe we've never changed.</p>
+            </div>
+          </li>
+
+          <li class="flavor-card reveal">
+            <figure class="flavor-media">
+              <img src="assets/img/flavor-caramel.jpg" alt="Warm caramel poured over vanilla gelato and brownie" width="900" height="1080" loading="lazy">
+              <figcaption class="flavor-tag">House favourite</figcaption>
+            </figure>
+            <div class="flavor-body">
+              <h3>Caramel &amp; Roasted Nuts</h3>
+              <p>Burnt-sugar caramel with hazelnuts and walnuts roasted in our own kitchen.</p>
+            </div>
+          </li>
+
+          <li class="flavor-card reveal d-1">
+            <figure class="flavor-media">
+              <img src="assets/img/flavor-stracciatella.jpg" alt="Stracciatella gelato in a waffle cone on a city street" width="900" height="1080" loading="lazy">
+              <figcaption class="flavor-tag">The classic</figcaption>
+            </figure>
+            <div class="flavor-body">
+              <h3>Stracciatella</h3>
+              <p>Cold cream laced with shards of dark chocolate, cracked in by hand as it churns.</p>
+            </div>
+          </li>
+
+          <li class="flavor-card reveal d-2">
+            <figure class="flavor-media">
+              <img src="assets/img/flavor-blackberry.jpg" alt="Wild blackberry gelato bars with fresh blackberries" width="900" height="1080" loading="lazy">
+              <figcaption class="flavor-tag">In season</figcaption>
+            </figure>
+            <div class="flavor-body">
+              <h3>Wild Blackberry</h3>
+              <p>Georgian mountain blackberries at their late-summer peak, and very little else.</p>
+            </div>
+          </li>
+        </ul>
+
+        <p class="flavor-note reveal">Vegan sorbets, sugar-free scoops and fresh coffee are always in the case — ask what's churning today.</p>
+      </div>
+    </section>
+
+    <!-- ======================= Story / experience ======================= -->
+    <section class="story section" id="story">
+      <div class="container story-grid">
+        <div class="story-media">
+          <figure class="story-img story-img-a reveal" data-drift="-14">
+            <img src="assets/img/display-case.jpg" alt="Gelato display case with rows of freshly churned flavours" width="1100" height="825" loading="lazy">
+          </figure>
+          <figure class="story-img story-img-b reveal d-2" data-drift="18">
+            <img src="assets/img/ingredients-berries.jpg" alt="Fresh strawberries piled high" width="800" height="800" loading="lazy">
+          </figure>
+          <figure class="story-img story-img-c reveal d-1" data-drift="8">
+            <img src="assets/img/cafe-interior.jpg" alt="Warm café interior with plants and wooden tables" width="1100" height="754" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="story-text">
+          <p class="kicker reveal">Our story</p>
+          <h2 class="reveal d-1">A small idea,<br>kept cold since 2008.</h2>
+          <div class="reveal d-2">
+            <p>Luca Polare began as one small shop on a cobbled street in Tbilisi's Old Town, with a churner, a fridge full of morning milk, and a stack of recipes carried back from Italy.</p>
+            <p>Not much has changed. The fruit still comes from the market, the nuts are still roasted in-house, and every flavour is still made in batches small enough to taste before it reaches the case. What's grown is the family around it — the regulars, the first-dates, the kids pressed against the glass deciding between sixty kinds of happiness.</p>
+            <p>Come for a cone. Stay for a coffee. That's the whole idea.</p>
+          </div>
+
+          <dl class="story-stats reveal d-3">
+            <div><dt>60+</dt><dd>flavours in rotation</dd></div>
+            <div><dt>2008</dt><dd>first shop, Old Town</dd></div>
+            <div><dt>0</dt><dd>artificial flavourings</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Reviews ======================= -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Word of mouth</p>
+          <h2>What people say<br><em>between spoonfuls.</em></h2>
+        </header>
+
+        <div class="review-grid">
+          <figure class="review-card reveal">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“The most <mark>delicious</mark> gelato I've had outside of Italy. The pistachio actually tastes like pistachio — you can tell everything is made from real ingredients.”</blockquote>
+            <figcaption>Elene&nbsp;M. <span>Tbilisi</span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal d-1">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Such a <mark>cozy</mark> place. We came for ice cream and stayed two hours talking over coffee. The staff remember our order by now.”</blockquote>
+            <figcaption>Nika&nbsp;G. <span>Regular since 2015</span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal d-2">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“An unbelievably <mark>wide variety</mark> — every visit there's something new in the case. The seasonal fruit sorbets are the ones to watch for.”</blockquote>
+            <figcaption>Sophie&nbsp;R. <span>Visiting from Berlin</span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal d-3">
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>“Everything tastes fresh and <mark>natural</mark> — you can taste the milk, the fruit, the care. My kids ask to come here every single weekend.”</blockquote>
+            <figcaption>Davit&nbsp;K. <span>Vake</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Visit / CTA ======================= -->
+    <section class="visit" id="visit">
+      <div class="visit-media" data-parallax="0.18">
+        <img src="assets/img/visit-cafe.jpg" alt="A quiet café table by a large window with plants" width="1800" height="1200" loading="lazy">
+      </div>
+      <div class="visit-veil" aria-hidden="true"></div>
+
+      <div class="container visit-content">
+        <p class="kicker reveal">Visit us</p>
+        <h2 class="reveal d-1">Come as you are.<br>Leave with a cone.</h2>
+        <p class="visit-lede reveal d-2">Every café churns its own gelato on site, all day. Drop by for a scoop, a slow coffee, or both.</p>
+
+        <div class="visit-locations reveal d-3">
+          <article class="location">
+            <h3>Old Town · Tbilisi</h3>
+            <p>34 Kote Abkhazi St</p>
+            <p class="hours">Daily 10:00 – 23:00</p>
+            <a class="location-link" href="https://www.google.com/maps/search/Luca+Polare+Kote+Abkhazi+Tbilisi" target="_blank" rel="noopener">Get directions →</a>
+          </article>
+          <article class="location">
+            <h3>Vake · Tbilisi</h3>
+            <p>60 Chavchavadze Ave</p>
+            <p class="hours">Daily 10:00 – 23:00</p>
+            <a class="location-link" href="https://www.google.com/maps/search/Luca+Polare+Chavchavadze+Tbilisi" target="_blank" rel="noopener">Get directions →</a>
+          </article>
+          <article class="location">
+            <h3>Seaside · Batumi</h3>
+            <p>Batumi Boulevard</p>
+            <p class="hours">Daily 10:00 – 24:00</p>
+            <a class="location-link" href="https://www.google.com/maps/search/Luca+Polare+Batumi" target="_blank" rel="noopener">Get directions →</a>
+          </article>
+        </div>
+
+        <div class="visit-actions reveal d-3">
+          <a class="btn btn-solid btn-light" href="#flavors">Back to the flavours</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= Footer ======================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="brand-name">Luca&nbsp;Polare</p>
+        <p>Artisan gelato, churned daily from fresh milk and real fruit. Tbilisi &amp; Batumi, since 2008.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <a href="#flavors">Flavours</a>
+        <a href="#story">Our Story</a>
+        <a href="#reviews">Word of Mouth</a>
+        <a href="#visit">Visit a Café</a>
+      </nav>
+
+      <div class="footer-contact">
+        <h4>Say hello</h4>
+        <a href="mailto:hello@lucapolare.com">hello@lucapolare.com</a>
+        <a href="tel:+995322000000">+995 32 200 00 00</a>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/lucapolare" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/lucapolare" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14 8h2.5V4.5H14A3.5 3.5 0 0 0 10.5 8v2.5H8V14h2.5v6H14v-6h2.5l.5-3.5h-3V8.5A.5.5 0 0 1 14 8Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Luca Polare. Made with fresh milk and patience.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
