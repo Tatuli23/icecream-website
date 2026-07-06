@@ -33,7 +33,7 @@ const I18N = {
     "ethos.4.body": "Small batches made through the day, so what lands in your cone was frozen hours ago — not weeks.",
 
     "flavors.kicker": "The counter",
-    "flavors.title": "Eight that never leave.<br><em>Sixty that come and go.</em>",
+    "flavors.title": "Our signature <em>eight.</em>",
     "flavors.lede": "Our case holds up to sixty flavours through the year, following what the orchards and markets bring. These are the signatures our regulars won't let us retire.",
     "flavors.note": "Vegan sorbets, sugar-free scoops and fresh coffee are always in the case — ask what's churning today.",
 
@@ -141,7 +141,7 @@ const I18N = {
     "ethos.4.body": "პატარა ულუფებს მთელი დღე ვამზადებთ — რაც თქვენ გხვდებათ, რამდენიმე საათის წინაა გაყინული და არა კვირების.",
 
     "flavors.kicker": "ვიტრინა",
-    "flavors.title": "რვა გემო ვიტრინას არ ტოვებს.<br><em>სამოცი — მოდის და მიდის.</em>",
+    "flavors.title": "ჩვენი რჩეული <em>რვიანი.</em>",
     "flavors.lede": "წლის განმავლობაში ვიტრინაში სამოცამდე გემო ინაცვლებს — იმის მიხედვით, რას მოგვიტანს ბაღი და ბაზარი. ეს კი ის გემოებია, რომელთა მოხსნასაც ჩვენი მუდმივი სტუმრები არ გვაპატიებდნენ.",
     "flavors.note": "ვეგანური სორბეტები, უშაქრო ნაყინი და ახლად მოხარშული ყავა ყოველთვის გვაქვს — გვკითხეთ, დღეს რა მზადდება.",
 
